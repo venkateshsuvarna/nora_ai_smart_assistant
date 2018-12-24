@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/primaryActivityToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:elevation="0dp"
+        android:maxHeight="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/messagesScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        app:layout_constraintBottom_toBottomOf="@id/linearLayoutInput"
+        app:layout_constraintBottom_toTopOf="@id/linearLayoutInput"
+        app:layout_constraintTop_toBottomOf="@id/primaryActivityToolbar"
+        app:layout_constraintTop_toTopOf="@+id/primaryActivityToolbar"
+        app:layout_constraintVertical_weight="9">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutMessageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutInput"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:maxHeight="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_weight="1">
+
+        <EditText
+            android:id="@+id/inputEditText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="8"
+            android:scrollHorizontally="true"
+            android:background="@drawable/rounded_edittext"
+            android:elevation="3dp"
+            android:hint="Type your query here..."
+            android:inputType="text"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp" />
+
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_weight="2"
+            android:adjustViewBounds="false"
+            android:background="@null"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:elevation="40dp"
+            android:src="@mipmap/ic_send_gray" />
+
+        <ImageButton
+            android:id="@+id/micButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:layout_weight="2"
+            android:adjustViewBounds="false"
+            android:background="@null"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:elevation="4dp"
+            android:src="@mipmap/ic_mic_dark_blue" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

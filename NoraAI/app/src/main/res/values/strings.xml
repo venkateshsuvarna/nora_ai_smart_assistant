@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Nora.AI</string>
+
+    <string name="feedbackTitle">Nora.AI</string>
+    <string name="feedbackSubTitle">Making your smartphone smarter.</string>
+    <string name="feedbackReviewQuestion">How did you like talking to Nora?</string>
+    <string name="feedbackPositiveReviewText">Awesome</string>
+    <string name="feedbackAmbiguityReviewText">Average</string>
+    <string name="feedbackNegativeReviewText">Needs work</string>
+
+</resources>

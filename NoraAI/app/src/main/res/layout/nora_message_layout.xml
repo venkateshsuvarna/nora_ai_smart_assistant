@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/noraMessageRelativeLayout"
+    android:paddingVertical="10dp"
+    android:paddingRight="15dp"
+    android:paddingLeft="10dp"
+    android:clipToPadding="false">
+
+    <ImageView
+        android:id="@+id/noraMessageImageView"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_launcher_round_small"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/noraMessageTextView"
+        android:background="@drawable/nora_message"
+        android:textColor="@android:color/black"
+        android:layout_toRightOf="@id/noraMessageImageView"
+        android:padding="10dp"
+        android:elevation="2dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="18dp"
+        android:text="I am good. How are you?"
+        />
+
+</RelativeLayout>

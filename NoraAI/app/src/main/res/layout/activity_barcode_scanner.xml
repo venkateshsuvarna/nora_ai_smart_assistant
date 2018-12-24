@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/cameraFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.otaliastudios.cameraview.CameraView
+            android:id="@+id/cameraView"
+            android:keepScreenOn="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/backArrowButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:background="#00000000"
+            android:drawableLeft="@mipmap/ic_back_arrow_white"
+            android:text="Back"
+            android:drawablePadding="10dp"
+            android:textColor="@android:color/white"
+            android:layout_margin="10dp"/>
+
+
+        <Button
+            android:id="@+id/scanCodeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:background="#00000000"
+            android:drawableTop="@mipmap/ic_scan_code"
+            android:text="Scan Code"
+            android:drawablePadding="10dp"
+            android:textColor="@android:color/white"
+            android:layout_margin="10dp"/>
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

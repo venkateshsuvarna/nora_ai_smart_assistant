@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "12130818245",
+    "firebase_url": "https://nora-ai-feb01.firebaseio.com",
+    "project_id": "nora-ai-feb01",
+    "storage_bucket": "nora-ai-feb01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12130818245:android:334a920f82479aaf",
+        "android_client_info": {
+          "package_name": "com.midastouch.noraai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12130818245-7df73bq3c0jh29dfcvm4u7b6q7lgfdc3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxDuHxVTYpsZmoQl0V4FGTm3tEv7n82cQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
